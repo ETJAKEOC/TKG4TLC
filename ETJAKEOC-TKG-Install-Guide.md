@@ -17,7 +17,8 @@ Inside this directory you will find a 'customization.cfg' file, open this in you
 
 Inside this file we will find a bunch of awesome options we can tweak to generate our own custom kernel every time with the same options, even if the script or kernel versions update. In order to keep our changes persistent though, we will want to save our copy elsewhere, this location is specified inside the 'customization.cfg' file, and is customizable in itself as well.
 
-## CUSTOMIZING THE INSTALL SCRIPT (This is long, but recommended to at least glance through, it will explain some of the options in a dumbed down way. For more in detail explanations of options, refer to the 'customization.cfg' file itself.):
+## CUSTOMIZING THE INSTALL SCRIPT:
+### (This is long, but recommended to at least glance through, it will explain some of the options in a dumbed down way. For more in detail explanations of options, refer to the 'customization.cfg' file itself.)
 
 #### (This can be skipped if you do not want to save your configurations for recompiling new kernel versions) Following the conventional method in the script from the github repo, we will save our file to '~/.config/frogminer/linux-tkg.cfg'. Again, feel free to modify this, but for our purposes here, we will stick with the default location.
 
