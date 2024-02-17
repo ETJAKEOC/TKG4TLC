@@ -32,13 +32,13 @@ The next option allows you to specify a kernel version to build against. Persona
 
 Our next option we have may have already seen, the location of our custom `customization.cfg` file.
 
-Underneath this is the cleanup option, this only applies to Arch linux, it cleans up the code as it compiles it, helping to save disk space.
+Underneath this is the cleanup option, this only applies to Arch Linux, it cleans up the code as it compiles it, helping to save disk space.
 
 Our next option is where we want to pull our kernel from, change this to one of the provided options based on your preference.
 
 The next four options are pretty self explanatory, and I normally leave these as the default (blank).
 
-The Force all threads option will change the amount of threads it uses to compile your kernel, ignoring the setting in the `makepkg.conf` on Arch linux.
+The Force all threads option will change the amount of threads it uses to compile your kernel, ignoring the setting in the `makepkg.conf` on Arch Linux.
 
 You can also disable ccache if you wanted to, I tend to leave this option enabled. `ccache` is a compiler caching program, TLDR; it makes cache files on your disk for compiling tasks that it does often, allowing it to `skip` compiling on some steps, as it already has the output cached somewhere. This will slow down your first build, as it builds the cache, subsequent runs *may* notice improvements in compile time.
 
@@ -60,7 +60,7 @@ The next set of options are where we dig into the tuning. The CPU scheduler basi
 
 Now we have our compiler option. You can use `gcc` if you like, but I personally use `llvm` myself. The next option controls LTO (Link Time Optimization), which changes how the kernel links things during compiling, trying to optimize them during linking, to boost our performance again. I normally enable this. If you picked clang, I recommend you choose an LTO mode, depending on your use case. I prefer `full` here.
 
-(More about LTO here: `https://llvm.org/docs/LinkTimeOptimization.html`)
+(More about LTO [here](https://llvm.org/docs/LinkTimeOptimization.html))
 
 ## Realtime Kernel???
 
@@ -139,4 +139,4 @@ This is a crash course guide to get you comfortable working with the TKG kernel,
 
 ## SUPPORT:
 
-Support results may vary. Keep in mind at the end of the day, I am not a developer, let alone a kernel developer. I am just some guy who can read files, understand things, and experiment. The choices I have made for my defaults may not always work for you, when in doubt, go with the default recommended in the `customization.cfg` file. If all else has failed, you can find me on The Linux Cast Discord channel. Please feel free to join us, start a #tech-support thread, and tag me (ETJAKEOC "Jake | TKG Kernel Zealot") in the thread, I will be along to assist you when I can.
+Support results may vary. Keep in mind at the end of the day, I am not a developer, let alone a kernel developer. I am just some guy who can read files, understand things, and experiment. The choices I have made for my defaults may not always work for you, when in doubt, go with the default recommended in the `customization.cfg` file. If all else has failed, you can find me on [The Linux Cast Discord server](https://discord.gg/KHckz5RTJs). Please feel free to join us, start a #tech-support thread, and tag me (ETJAKEOC "Jake | TKG Kernel Zealot") in the thread, I will be along to assist you when I can.
