@@ -11,7 +11,7 @@ Depending on the OS you're running depends on how you will install this package.
 
 All users will begin with the beginning step of cloning the github repo from the Frogging-Family.
 
-```(git clone --depth 1 https://github.com/Frogging-Family/linux-tkg)```
+```git clone --depth 1 https://github.com/Frogging-Family/linux-tkg```
 
 We will 'cd' into the new directory called 'linux-tkg'.
 
