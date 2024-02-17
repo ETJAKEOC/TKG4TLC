@@ -3,12 +3,14 @@
 ## INTRODUCTION:
 
 Welcome to the TKG kernel crash course. Here we will learn about the basics of setting up and using the TKG kernel install script. Most options in this guide that we will cover will have their own descriptions inside the `customization.cfg` file, this just covers the basics and tries to explain them. For a more in depth explanation of an option, please refer to the original file, or do a search online about it.
+
 Depending on the OS you're running depends on how you will install this package.
 
 
 ## FIRST STEPS:
 
 All users will begin with the beginning step of cloning the github repo from the Frogging-Family.
+
 ```(git clone --depth 1 https://github.com/Frogging-Family/linux-tkg)```
 
 We will 'cd' into the new directory called 'linux-tkg'.
@@ -57,7 +59,8 @@ The next set of options are where we dig into the tuning. The CPU scheduler basi
 ## Compiler options:
 
 Now we have our compiler option. You can use 'gcc' if you like, but I personally use 'llvm' myself. The next option controls LTO (Link Time Optimization), which changes how the kernel links things during compiling, trying to optimize them during linking, to boost our performance again. I normally enable this. If you picked clang, I recommend you choose an LTO mode, depending on your use case. I prefer 'full' here.
-More about LTO here: `https://llvm.org/docs/LinkTimeOptimization.html`
+
+(More about LTO here: `https://llvm.org/docs/LinkTimeOptimization.html`)
 
 ## Realtime Kernel???
 
